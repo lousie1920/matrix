@@ -31,7 +31,7 @@ class MatrixTest {
 		assertTrue(Arrays.deepEquals(myRows, myMatrix.getElementsAsRowArrays()));
 		
 		assertArrayEquals( new double[] {0.5, 0, 0, 0.5, 0, 0}, myMatrix.scaled(0.5).getElementsRowMajor());
-		assertArrayEquals( new double[] {1,0,2,1,0,2}, myMatrix.plus( new Matrix(3,2, new double[] {0,0,0,0,2,2})).getElementsRowMajor());
+		assertArrayEquals( new double[] {1,0,0,1,2,2}, myMatrix.plus( new Matrix(3,2, new double[] {0,0,0,0,2,2})).getElementsRowMajor());
 				
 				
 	}
